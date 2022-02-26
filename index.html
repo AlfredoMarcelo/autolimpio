@@ -1,53 +1,227 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Alfredo">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/scss/custom.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Alfredo" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/scss/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
     <title>Auto Limpio</title>
-</head>
-<header class="text-center">
+  </head>
+  <header class="text-center">
     <h1><i class="bi bi-wrench-adjustable-circle-fill"></i>Auto Limpio</h1>
-</header>
-<nav>
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
-        <div class="container ">
-          <a class="navbar-brand" href="#"><i class="bi bi-wrench-adjustable-circle-fill"></i> Auto Limpio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
+  </header>
+  <nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="bi bi-wrench-adjustable-circle-fill"></i> Auto Limpio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <body>
+    <section class="bg-dark">
+      <div class="container">
+        <div class="row mt-5 py-5 justify-content-center text-light">
+          <div class="col-12 text-white text-center">
+            <p class="h1" id="scrollspyHeading4">
+              <i class="bi bi-box-arrow-in-right"></i> Ingrese sus datos
+            </p>
+          </div>
+          <div class="col-6 mt-2">
+            <form id="formulario">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="nombre"
+                  class="form-control my-2"
+                  placeholder="Nombre"
+                  id="nombre"
+                />
+                <div id="alertaInfo" role="alert"></div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="apellidoUno"
+                  class="form-control my-2"
+                  placeholder="Primer Apellido"
+                  id="apellidoUno"
+                />
+                <div id="alertaInfo" role="alert"></div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="apellidoDos"
+                  class="form-control my-2"
+                  placeholder="Segundo Apellido"
+                  id="apellidoDos"
+                />
+                <div id="alertaInfo" role="alert"></div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="rut"
+                  class="form-control my-2"
+                  placeholder="rut"
+                  id="rut"
+                />
+                <div id="alertaInfo" role="alert"></div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="direccion"
+                  class="form-control my-2"
+                  placeholder="Dirección"
+                  id="direccion"
+                />
+                <div id="alertaInfo" role="alert"></div>
+              </div>
+              <div class="input-group mb-3">
+                <label
+                  class="input-group-text bg-primary text-white"
+                  for="inputGroupSelect01"
+                  >Comuna</label
+                >
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Seleccione su comuna...</option>
+                  <option value="1">Arica</option>
+                  <option value="2">Putre</option>
+                  <option value="3">Camarones</option>
+                  <option value="3">General Lagos</option>
+                  <option value="3">Pozo Almonte</option>
+                </select>
+              </div>
+              <div class="col-12 text-white text-center mt-5 mb-4">
+                <p class="h1" id="scrollspyHeading4">
+                  <i class="bi bi-gear-fill"></i> Ingrese su vehículo
+                </p>
+              </div>
+              <div>
+                <div class="input-group mb-3">
+                  <label
+                    class="input-group-text bg-primary text-white"
+                    for="inputGroupSelect01"
+                    >Vehículo</label
+                  >
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Tipo de auto...</option>
+                    <option value="1">Furgón</option>
+                    <option value="2">Automóvil</option>
+                    <option value="3">Camión</option>
+                    <option value="3">Camioneta</option>
+                    <option value="3">Moto</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    name="marca"
+                    class="form-control my-2"
+                    placeholder="Marca"
+                    id="marca"
+                  />
+                  <div id="alertaInfo" role="alert"></div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    name="modelo"
+                    class="form-control my-2"
+                    placeholder="Modelo"
+                    id="modelo"
+                  />
+                  <div id="alertaInfo" role="alert"></div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="date"
+                    name="number"
+                    class="form-control my-2"
+                    placeholder="Año"
+                    id="number"
+                  />
+                  <div id="alertaInfo" role="alert"></div>
+                </div>
+                
+                <div class="mb-3">
+                <label class="form-check-label">Revisión Técnica al día</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Si
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                  </div>
+              <div id="alertaInfo" role="alert">
+              </div>
+            </div>
+
+                <!-- <div class="mb-3">
+                <p>Please select your favorite Web language:</p>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label>
+              <div id="alertaRadio" role="alert">
+              </div> -->
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary mt-3 mb-3 py-2 rounded-pill">
+                  <p class="h3">
+                    <i class="bi bi-door-open"></i>
+                    Submit
+                  </p>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-      </nav>
-    
-</nav>
-<body>
-    
+      </div>
+      <div class="row py-5"></div>
+      <div class="row py-5"></div>
+      <div class="row py-5"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
